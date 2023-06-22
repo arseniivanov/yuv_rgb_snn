@@ -19,7 +19,11 @@ YUV is a color encoding system typically used as part of a color image pipeline.
 ![alt text](RGB-YUV.jpg)
 ## Relation to Retinal Ganglion Cells
 
-The design of the YUV color space reflects the workings of the human visual system, similar to the way our retinal ganglion cells process visual information. They send color and brightness information separately, with more emphasis on the brightness information – an aspect that's essentially replicated in the YUV model. This human vision-related feature gives the YUV color space an edge, particularly when we aim for more biologically plausible models like SNNs.
+The design of the YUV color space reflects the workings of the human visual system, similar to the way our [retinal ganglion cells](https://en.wikipedia.org/wiki/Retinal_ganglion_cell) process visual information. They send color and brightness information separately, with more emphasis on the brightness information – an aspect that's essentially replicated in the YUV model. This human vision-related feature gives the YUV color space an edge, particularly when we aim for more biologically plausible models like SNNs.
+
+There are about 0.7 to 1.5 million retinal ganglion cells in the human retina. With about 4.6 million cone cells and 92 million rod cells, or 96.6 million photoreceptors per retina, on average each retinal ganglion cell receives inputs from about 100 rods and cones.
+
+This information can be used when trying to build an SNN to mimic the function of the retina. With more rods than cones, the Y (Luminance) channel should have more attention in the network.
 ## Relevance to Spiking Neural Networks (SNNs)
 
 SNNs, also referred to as the "third generation" of neural networks, are closer to biological networks compared to their predecessors. They do not just process neuronal signals but also take into account the 'time' factor, i.e., the precise moment when a neuron fires.
