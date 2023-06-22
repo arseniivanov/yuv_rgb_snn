@@ -10,12 +10,13 @@ The objective of this project is to dive into an exploration and comparison of t
 ## Role of Color Spaces
 
 Understanding the role of RGB and YUV color spaces is vital for this study.
-RGB Color Space
+### RGB Color Space
 
 The RGB color model is an additive color model in which the red, green, and blue primary colors of light are added together in various ways to reproduce a broad array of colors. This model closely matches the way human sight develops color, and thus, it is widely used in many devices that capture or display images.
-YUV Color Space
+### YUV Color Space
 
 YUV is a color encoding system typically used as part of a color image pipeline. It encodes a color image or video taking human perception into account, allowing reduced bandwidth for chrominance compared to luminance data, as humans are more sensitive to changes in brightness than color. Y channel corresponds to the luminance (or brightness) and U and V to the chrominance (or color).
+![alt text](RGB-YUV.jpg)
 ## Relation to Retinal Ganglion Cells
 
 The design of the YUV color space reflects the workings of the human visual system, similar to the way our retinal ganglion cells process visual information. They send color and brightness information separately, with more emphasis on the brightness information – an aspect that's essentially replicated in the YUV model. This human vision-related feature gives the YUV color space an edge, particularly when we aim for more biologically plausible models like SNNs.
