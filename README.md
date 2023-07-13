@@ -38,6 +38,13 @@ This exploration project aims to:
   Understand the effects of color space transformations on SNNs' performance and efficiency.
   Identify if YUV data could potentially leverage SNNs' architecture to yield better results in terms of computational efficiency and performance accuracy.
 
+## Comparison
+
+The comparison is planned to be done in a way where we have a shared amount of filters between the two methodologies. For YUV however, the majority of the filters will be placed in the Y-component for convolutions according to the relationship between rods and cones in the visual cortex:
+
+Relationships: 95% filters for Y, 2.5% filters for U, 2.5% filters for V. 1% dense/linear nodes compared to all feature extraction filters. 
+ .
+
 # Conclusion
 
 Through this project, we expect to gain insights that will enhance the understanding and effectiveness of SNNs. Given the biological plausibility of both SNNs and the YUV color space, this exploration could potentially lead to the development of more efficient, effective, and biologically relevant artificial neural networks.
